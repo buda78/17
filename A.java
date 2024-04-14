@@ -1,26 +1,19 @@
-import java.util.Scanner;
-import java.util.TreeSet;
-
-public class SortedIntegers {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        TreeSet<Integer> numbers = new TreeSet<>();
-
-        System.out.print("Enter the number of integers (N): ");
-        int n = scanner.nextInt();
-
-        System.out.println("Enter " + n + " integers:");
-        for (int i = 0; i < n; i++) {
-            int num = scanner.nextInt();
-            numbers.add(num);
-        }
-
-        System.out.println("Integers in sorted order without duplicates:");
-        for (int number : numbers) {
-            System.out.println(number);
-        }
-
-        scanner.close();
-    }
+package goo;
+import java.util.*;
+public class hashset{
+	public static void main(String arg[]) {
+		Scanner sc=new Scanner(System.in);
+		TreeSet<Integer> ts=new TreeSet<>();
+		System.out.println("How many values:");
+		int n=sc.nextInt();
+		System.out.println("Enter the Numbers:");
+		for(int i=0;i<n;i++) {
+			int num=sc.nextInt();
+			ts.add(num);
+		}
+		System.out.println("numbers in Sorted orders:");
+		for(int num:ts) {
+			System.out.println(num);
+		}
+	}
 }
-
